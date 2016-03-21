@@ -1,0 +1,16 @@
+body {
+	font-family: tahoma;
+	font-size: 14pt;
+}
+
+p a {
+	font-size: 10pt;
+}
+
+tr.branch {
+	font-weight: bold;
+}
+
+td {
+	width: 50%;
+}

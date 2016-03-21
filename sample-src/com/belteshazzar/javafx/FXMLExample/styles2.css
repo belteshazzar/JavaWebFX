@@ -1,0 +1,41 @@
+body { 
+  background-color: green;
+}
+
+.label {
+    font-size: 12px;
+   font-family: "arial black";
+    font-weight: bold;
+    text-fill: #333333;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+}
+
+.welcome-text {
+   font-size: 32px;
+   font-family: "arial black";
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.3);
+  -webkit-background-clip: text;
+}
+
+#actiontarget {
+  color: FIREBRICK;
+  font-weight: bold;
+  text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+}
+
+button {
+    color: white;
+    font-family: "Arial Narrow";
+    font-weight: bold;
+    background: linear-gradient(#61a2b1, #2A5058);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.6);
+    border-radius: 4px;
+}
+
+table {
+	position:absolute;
+left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}

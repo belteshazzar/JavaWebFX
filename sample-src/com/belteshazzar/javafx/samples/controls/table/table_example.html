@@ -1,0 +1,32 @@
+<html fx:controller="fx.samples.controls.table.TableExampleController">
+<head>
+	<title>Table View Sample</title>
+	<style>
+	   table {
+	     border-collapse: collapse;
+	   }
+	   td {
+	     border: 1px solid grey;
+	     padding: 10px;
+	   }
+	</style>
+</head>
+<body>
+
+<h1>Address Book</h1>
+<table id="table">
+  <tfoot>
+    <tr>
+      <td><input type="text" id="firstName" value="Emma"></td>
+      <td><input type="text" id="lastName" value="White"></td>
+      <td><input type="text" id="email" value="emma@example.com"></td>
+      <td><input type="button" id="add" value="Add" onclick="#add"></td>
+    </tr>
+  </tfoot>
+</table>
+
+<input type="radio" name="sort" value="ascending" checked> Ascending 
+<input type="radio" name="sort" value="descending"> Descending 
+
+</body>
+</html>

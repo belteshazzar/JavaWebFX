@@ -1,0 +1,77 @@
+<html fx:controller="fx.samples.controls.KitchenSinkController">
+<head>
+	<title>kitchen sink example</title>
+</head>
+<body>
+<table>
+	<tr><td>Button-Button:</td><td><button type="button" onClick="#handleButton" id="buttonButton">button button</button></td></tr>
+	<tr><td>Button-Reset:</td><td><button type="reset" onClick="#handleReset" id="buttonReset">button reset</button></td></tr>
+	<tr><td>Button-Submit:</td><td><button type="submit" id="buttonSubmit">button submit</button></td></tr>
+	<tr><td>Input-Button:</td><td><input type="button" id="inputButton" value="input button"></td></tr>
+    <tr>
+		<td>Input-Checkbox:</td>
+		<td>
+			<input type="checkbox" id="inputCheckbox" value="Bike"> I have a bike<br>
+		</td>
+	</tr>
+	<tr><td>Input-Color:</td><td><input type="color" id="inputColor" value="#000000"></td></tr>
+	<tr><td>Input-Date:</td><td><input type="date" id="inputDate" ></td></tr>
+	<tr><td>Input-Datetime:</td><td><input type="datetime" id="inputDatetime" ></td></tr>
+	<tr><td>Input-Datetime-Local:</td><td><input type="datetime-local" id="inputDatetimeLocal" ></td></tr>
+	<tr><td>Input-Email:</td><td><input type="email" id="inputEmail" ></td></tr>
+	<tr><td>Input-File:</td><td><input type="file" id="inputFile" ></td></tr>
+	<tr><td>Input-Hidden:</td><td><input type="hidden" id="inputHidden" ></td></tr>
+	<tr><td>Input-Image:</td><td><input type="image" id="inputImage" ></td></tr>
+	<tr><td>Input-Month:</td><td><input type="month" id="inputMonth" ></td></tr>
+	<tr><td>Input-Number:</td><td><input type="number" id="inputNumber" ></td></tr>
+	<tr><td>Input-Password:</td><td><input type="password" id="inputPassword" ></td></tr>
+    <tr>
+      <td>Input-Radio:</td>
+      <td>
+        <input type="radio" name="gender" value="male" checked> Male 
+        <input type="radio" name="gender" value="female"> Female 
+      </td>
+    </tr>
+	<tr><td>Input-Range:</td><td><input type="range" id="inputRange" ></td></tr>
+	<tr><td>Input-Reset:</td><td><input type="reset" id="inputReset" ></td></tr>
+	<tr><td>Input-Search:</td><td><input type="search" id="inputSearch" ></td></tr>
+	<tr><td>Input-Submit:</td><td><input type="submit" id="inputSubmit" ></td></tr>
+	<tr><td>Input-Tel:</td><td><input type="tel" id="inputTel" ></td></tr>
+	<tr><td>Input-Text:</td><td><input type="text" id="inputText" ></td></tr>
+	<tr><td>Input-Time:</td><td><input type="time" id="inputTime" ></td></tr>
+	<tr><td>Input-Url:</td><td><input type="url" id="inputUrl" ></td></tr>
+	<tr><td>Input-Week:</td><td><input type="week" id="inputWeek" ></td></tr>
+	<tr><td>Progress:</td><td><progress id="progress" value="22" max="100"></progress></tr></tr> 
+    <tr>
+	  <td>Select:</td>
+	  <td>
+	    <select id="select">
+		   <option value="volvo">Volvo</option>
+		   <option value="saab">Saab</option>
+		   <option value="mercedes">Mercedes</option>
+		   <option value="audi">Audi</option>
+		</select>     
+	  </td>
+    </tr>
+	<tr><td>Textarea:</td><td><textarea id="textareaPlain"></textarea></td></tr>
+	<tr><td>Textarea (rich):</td><td><textarea type="rich" id="textareaRich" cols="50" rows="10">asdf</textarea></td></tr>
+</table>
+
+<script>
+
+
+function ready() {
+  console.log("ready");
+  
+  
+  if (window.java) {
+    console.log("in WebScene");
+  } else {
+    console.log("not in WebScene");
+  }
+}
+
+
+</script>
+</body>
+</html>

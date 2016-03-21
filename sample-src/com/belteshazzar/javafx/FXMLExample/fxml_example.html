@@ -1,0 +1,30 @@
+<html fx:controller="FXMLExample.FXMLExampleController">
+<head id="head">
+  <title>FXML Welcome</title>
+  <link id="styles" rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <table>
+    <tr><td class="welcome-text" colspan="2">Welcome</td></tr>
+    <tr><td class="label">User Name:</td><td><input type="text" id="username"></td></tr>
+    <tr><td class="label">Password:</td><td><input type="password" id="password"></td></tr>
+    <tr><td></td><td><button type="button" onClick="#handleSubmitButtonAction">Sign In</button></td></tr>
+    <tr><td></td><td id="actiontarget">&nbsp;</td></tr>
+  </table>
+
+<script>
+function ready() {
+return;
+console.log("ready()");
+
+var styles = document.getElementById("styles");
+var parent = styles.parentNode;
+parent.removeChild(styles);
+styles.href = "file:///C:/Users/e262364/workspace/fx/bin/FXMLExample/styles2.css";
+parent.appendChild(styles);
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html fx:controller="fx.samples.controls.menu.MenuSample">
+<head>
+	<title>menu example</title>
+	<style>
+		p {
+			text-align: justify;
+		}
+	</style>
+</head>
+<body>
+
+<menu id="fileMenu" label="File">
+  <menuitem label="New" icon="new.png"></menuitem>
+  <menuitem label="Clear"></menuitem>
+  <menuitem type="separator"></menuitem>
+  <menuitem label="Exit" id="exit" onAction="#exit"></menuitem>
+</menu>
+
+<menu id="edit" label="Edit">
+  <menu label="Picture Effect">
+    <menuitem id="sepia"  type="radio" group="effect" label="Sepia"></menuitem>
+    <menuitem id="glow"   type="radio" group="effect" label="Glow"></menuitem>
+    <menuitem id="shadow" type="radio" group="effect" label="Shadow"></menuitem>
+  </menu>
+  <menuitem label="Impossible" ></menuitem>
+</menu>
+
+<menu label="View">
+  <menuitem id="toggleTitle"       onAction="#toggleTitle"       type="checkbox" label="Title"></menuitem>
+  <menuitem id="togglePicture"     onAction="#togglePicture"     type="checkbox" label="Picture"></menuitem>
+  <menuitem id="toggleDescription" onAction="#toggleDescription" type="checkbox" label="Description"></menuitem>
+</menu>
+
+<h1 id="title">Menu Example</h1>
+
+<img id="picture" width="300" height="200" src="Quince.jpg">
+
+<p id="description">
+The quince is the sole member of the genus Cydonia and is native to
+warm-temperate southwest Asia in the Caucasus region. The
+immature fruit is green with dense grey-white pubescence, most
+of which rubs off before maturity in late autumn when the fruit
+changes color to yellow with hard, strongly perfumed flesh.
+</p>
+
+</body>
+</html>

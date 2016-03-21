@@ -1,0 +1,31 @@
+<html fx:controller="fx.IndexController">
+<head><title>index page</title></head>
+<body onmousemove="#onMouseMove">
+
+<p id="p">paragraph text</p>
+
+<form id="my_form">
+
+  <input id="my_text" type="text" onInput="#handleTextInput" />
+  
+  <button type="button" id="my_button" onClick="#handleMyButtonClick">press me</button>
+  
+</form>
+
+<canvas id="cnvs" width="300" height="300" style="background-color: blue"></canvas>
+
+<table id="table">
+</table>
+
+<script>
+function ready() {
+console.log("ready");
+console.log(java);
+console.log(java.controller);
+}
+
+</script>
+
+</body>
+
+</html>
